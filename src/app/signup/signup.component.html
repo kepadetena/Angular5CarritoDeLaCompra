@@ -1,0 +1,8 @@
+<div style="text-align: center;" class="form-container">
+  <h2>Crea tu cuenta de usuario</h2>
+  <form #formData='ngForm' (ngSubmit)="onSubmit(formData)">
+    <input type="text" placeholder="Email address" (ngModel)="email" name="email" class="input-txt" required>
+    <input type="password" placeholder="Password" (ngModel)="password" name="password" class="input-txt" required>
+    <button type="submit" class="btn btn-secondary btn-lg btn-block" [disabled]="!formData.valid" class="auth-btn"><i class="fas fa-plus"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Crea una cuenta</button>
+  </form>
+</div>

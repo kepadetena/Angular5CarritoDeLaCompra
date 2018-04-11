@@ -1,0 +1,17 @@
+<div class="container" style="text-align: center;">
+    <h1>Festivales</h1>
+        <div *ngFor="let rutas of rutaObservable | async" style="display: inline-flex;">
+          <div *ngIf="rutas.categoria=='Festivales'">
+          <ngb-alert type="info" [dismissible]="false">
+              <h3>{{ rutas.titulo }}</h3>
+              <img src="{{ rutas.foto }}" style="width: 300px; height: 200px;" alt="imagen-rutas"><hr>
+              <a [routerLink]="['/detalles', rutas._id]" class="btn btn-success btn-lg btn-block">Más detalles</a>
+              <!--<p style="width: 300px">{{ rutas.descripcion }}</p>
+              <h2>{{ rutas.precio }} &#8364;</h2>
+              <a class="btn btn-success btn-lg btn-block" href="/assets/pdfs/rutas.pdf" id="folleto"><h6><i class="far fa-file-pdf"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Folleto PDF</h6></a>
+              --><a class="btn btn-danger btn-lg btn-block" href="https://www.turitop.com/es/"><i class="far fa-address-book"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reservar</a>
+             </ngb-alert>
+            </div>
+        </div>
+  </div>
+

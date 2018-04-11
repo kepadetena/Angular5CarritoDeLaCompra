@@ -1,0 +1,80 @@
+
+<!--<div class="container" id="header" item-width="100%" item-height="20%">
+  <div id="logo" class="col-2">
+    <img src="/assets/logo.png" alt="logo" width="50%">
+  </div>
+  <div id="imagen" class="col-6">
+    <img src="/assets/bienvenida.jpg" alt="cabecera" width="100%">
+  </div>
+  <div id="buscador" class="col-4">
+    <nav class="navbar navbar-light bg-light">
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </nav>
+  </div>
+</div>-->
+<div>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="true" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <div class="col-md-3">
+        <a class="btn btn-warning btn-lg btn-block" routerLink="/home"><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home</a>
+      </div>
+      <div class="col-md-3">
+        <a class="btn btn-warning btn-lg btn-block nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-plane"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rutas
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" routerLink="/ciudades">A las capitales</a>
+          <a class="dropdown-item" routerLink="/festivales">Festivales</a>
+          <a class="dropdown-item" routerLink="/paraisos">Paradisíacos</a>
+          <a class="dropdown-item" routerLink="/rutas">Todas las rutas disponibles</a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <a class="btn btn-warning btn-lg btn-block" routerLink="/login"><i class="far fa-arrow-alt-circle-down"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Insertar</a>
+      </div>
+      <div class="col-md-3">
+        <a class="btn btn-warning btn-lg btn-block" routerLink="/contactos"><i class="far fa-user"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <br>
+  <router-outlet></router-outlet>
+  <br>
+
+  <div id="footer">
+    <div class="row">
+      <div class="col-4" align="center">
+        <p><b><u>Redes sociales</u></b></p>
+        <a style="color: white;" href=""><i class="fab fa-facebook-square fa-2x"></i></a>
+        <a style="color: white;" href=""><i class="fab fa-twitter-square fa-2x"></i></a>
+        <a style="color: white;" href=""><i class="fab fa-instagram fa-2x"></i></a>
+        <a style="color: white;" href=""><i class="fab fa-tumblr-square fa-2x"></i></a>
+        <a style="color: white;" href=""><i class="fab fa-pinterest-square fa-2x"></i></a>
+        <a style="color: white;" href=""><i class="fas fa-envelope fa-2x"></i></a>
+        <a style="color: white;" href=""></a>
+      </div>
+      <div class="col-4" align="center">
+        <div align="center">
+          <a style="color: white;" href="/assets/pdfs/cookies.pdf"><b>Politica de cookies</b></a><br>
+          <a routerLink="/contacto" style="color: white;"><b>Contacto</b></a><br>
+          <a href="https://www.civitatis.com/" style="color: white;"><b>Conócenos</b></a><br>
+        </div>
+      </div>
+      <div class="col-4" align="center">
+        <div align="center"><br>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" aria-label="Search">
+            <button class="btn btn-light my-2 my-sm-0" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+
+.fixed-top {
+    position: inherit;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    clear: both;
+}
+
+#footer{
+    position: inherit;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    line-height: 25px;
+    background-color: #343a40;
+    color: white;
+}
+
+ #login{
+    width: 40%;
+    position: relative;
+ }

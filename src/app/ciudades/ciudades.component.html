@@ -1,0 +1,17 @@
+<div class="container" style="text-align: center;">
+    <h1>Cuidades Túristicas</h1>
+        <div *ngFor="let rutas of rutaObservable | async" style="display: inline-flex;">
+          <div *ngIf="rutas.categoria=='Ciudades'">
+          <ngb-alert type="info" [dismissible]="false">
+              <h3>{{ rutas.titulo }}</h3>
+              <img src="{{ rutas.foto }}" style="width: 300px; height: 200px;" alt="imagen-rutas"><hr>
+              <input hidden type="string" value={{rutas._id}} #id>
+              <input hidden type="string" value={{rutas.foto}} #foto>
+              <input hidden type="string" value={{rutas.titulo}} #titulo>
+              <input hidden type="string" value={{rutas.precio}} #precio>
+              <input class="btn btn-success btn-lg btn-block" type="button" value="Reservar"   (click)="detalles(id,titulo,foto,precio)">
+             
+             </ngb-alert>
+            </div>
+        </div>
+  </div>
