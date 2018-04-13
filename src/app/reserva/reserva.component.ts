@@ -23,6 +23,7 @@ export class ReservaComponent implements OnInit {
 }
 reservar(ident,nombre,fot,preci,cant) {
   this.reserva = {   
+    id: ident.value,
     titulo: nombre.value,
     foto: fot.value,
     precio: preci.value,

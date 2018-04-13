@@ -33,6 +33,15 @@ export class CarritoComponent implements OnInit {
     return this.db.list(listPath).valueChanges();
   }
 
+  borrarviaje(id){
+    this.cookieService.delete(id);
+    window.location.reload(true);
+  }
+
+  vaciarcarrito(){
+    this.cookieService.deleteAll;
+    window.location.reload(true);
+  }
 }
 
 

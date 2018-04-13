@@ -1,0 +1,16 @@
+{
+"rutas" : [
+{"_id" : "1", "titulo" : "Madrid", "fecha" : "15/03/2018", "descripcion" : "Ven a la capital de este pais para disfrutar de sus tapas", "precio" : "59.99", "foto" : "/assets/imagenes/madrid.jpg", "categoria" : "Ciudades"},
+{"_id" : "2", "titulo" : "Arenal Sound", "fecha" : "19/03/2018", "descripcion" : "Bonitas playas de burriana", "precio" : "79.99", "foto" : "/assets/imagenes/arenal.jpg", "categoria" : "Festivales"},
+{"_id" : "3", "titulo" : "Punta Cana", "fecha" : "23/03/2018", "descripcion" : "Disfruta de la playa la arena y el sol de esta ciudad", "precio" : "599.99", "foto" : "/assets/imagenes/punta.jpg", "categoria" : "Paraisos"},
+{"_id" : "4", "titulo" : "Tomorrowland", "fecha" : "26/03/2018", "descripcion" : "música dabuten", "precio" : "59.99", "foto" : "/assets/imagenes/tomorrow.jpg", "categoria" : "Festivales"},
+{"_id" : "5", "titulo" : "Barcelona", "fecha" : "29/03/2018", "descripcion" : "Ven a la ciudad catalana con mas encanto de este pais", "precio" : "39.99", "foto" : "/assets/imagenes/barcelona.jpg", "categoria" : "Ciudades"},
+{"_id" : "6", "titulo" : "Las Maldivas", "fecha" : "01/04/2018", "descripcion" : "Aprovecha el sol para tostarte cual rebanada de pan", "precio" : "699.99", "foto" : "/assets/imagenes/malvinas.jpg", "categoria" : "Paraisos"},
+{"_id" : "7", "titulo" : "Bora Bora", "fecha" : "04/04/2018", "descripcion" : "Solesito rico y maracuya con platanito frito", "precio" : "799.99", "foto" : "/assets/imagenes/bora.jpg", "categoria" : "Paraisos"},
+{"_id" : "8", "titulo" : "Metalkoholic Fest", "fecha" : "07/04/2018", "descripcion" : "Metal, si señor", "precio" : "89.99", "foto" : "/assets/imagenes/fest.jpg", "categoria" : "Festivales"},
+{"_id" : "9", "titulo" : "Sevilla", "fecha" : "10/04/2018", "descripcion" : "Ven a esta ciudad con duende a bailar vestido de flamenco", "precio" : "69.99", "foto" : "/assets/imagenes/sevilla.jpg", "categoria" : "Ciudades"}
+],
+"contactos" : [
+{"_id" : "1", "mail" : "adrian@gmail.com", "fecha" : "02/01/2018", "comentario" : "Hola tio me llamo ralph"}
+]
+}

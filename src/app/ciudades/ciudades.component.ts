@@ -22,11 +22,12 @@ getRutas(listPath): Observable<any[]> {
   return this.db.list(listPath).valueChanges();
 }
 
-detalles(ident,nombre,fot,preci) {
+detalles(ident,nombre,desc,fot,preci) {
   this.prueba = {   
     id: ident.value,
     titulo: nombre.value,
     foto: fot.value,
+    descripcion: desc.value,
     precio: preci.value
  };
   this.cookieService.set("actual", JSON.stringify(this.prueba)); 

@@ -6,12 +6,13 @@
   <h1>tu carrito</h1>
       <div *ngFor="let rutas of carrito " style="display: inline-flex;">
         <ngb-alert type="info" [dismissible]="false">
-            <h3>{{ rutas.titulo }}</h3>
-            <img src="{{ rutas.foto }}" style="width: 300px; height: 200px;" alt="imagen-rutas"><hr>
-            <h3 class="btn btn-success btn-lg btn-block">precio:{{rutas.precio}}<br>cantidad:{{rutas.cantidad}}</h3>
-           </ngb-alert>
-          
+          <h3>{{ rutas.titulo }}</h3>
+          <img src="{{ rutas.foto }}" style="width: 300px; height: 200px;" alt="imagen-rutas"><hr>
+          <h3 class="btn btn-success btn-lg btn-block">precio:{{rutas.precio}}<br>cantidad:{{rutas.cantidad}}</h3>
+          <input type="button" class="btn btn-danger " value="Elimirar viaje" (click)="borrarviaje(rutas.id)">
+        </ngb-alert>  
       </div>
       <a class="btn btn-danger btn-lg btn-block" >Precio total:{{total}}</a>
-      <a href="hppt://www.google.es" class="btn btn-danger btn-lg btn-block" ><i class="far fa-address-book"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reservar</a>
+      <input type="button" class="btn btn-danger " value="vaciar carrito" (click)="vaciarcarrito()">
+      <a href="hppt://www.google.es" class="btn btn-danger " ><i class="far fa-address-book"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reservar</a>
 </div>
